@@ -17,7 +17,7 @@ public class app {
         mainWindow.setLayout(null);
 
         // add login components
-//      background.setBackground();
+        background.setBackground();
         // add homepage components
         home.setHome();
 
