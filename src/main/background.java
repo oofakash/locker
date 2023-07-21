@@ -23,7 +23,6 @@ public class background {
         app.mainWindow.add(background);
 
         loginButton();
-        altLoginKey();
         exitButton();
 
         addPassword();
@@ -32,6 +31,8 @@ public class background {
 
         actions.exitButton();
         actions.loginButton();
+
+        altLoginKey();
 
         displayError();
     }
