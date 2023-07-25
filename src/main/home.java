@@ -98,10 +98,6 @@ public class home {
         tableModel = new DefaultTableModel();
         tableModel.addColumn("PATH");
         tableModel.addColumn("STATUS");
-        tableModel.addRow(new Object[]{"File 1", "Active"});
-        tableModel.addRow(new Object[]{"File 2", "Active"});
-        tableModel.addRow(new Object[]{"File 3", "Active"});
-        tableModel.addRow(new Object[]{"File 4", "Active"});
 
         table = new JTable(tableModel) {
             @Override
@@ -112,6 +108,7 @@ public class home {
         JScrollPane scrollPane = new JScrollPane(table);
         scrollPane.setSize(693,254);
         scrollPane.setLocation(3,3);
+        scrollPane.getViewport().setBackground(Color.WHITE);
         mid.add(scrollPane);
 
         table.setRowHeight(34);
