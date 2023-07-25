@@ -1,7 +1,11 @@
 package main;
-
 import javax.swing.*;
 import java.awt.*;
+
+import main.dialogs.filePanel;
+import main.utils.fileOperations;
+import main.utils.recentDataList;
+
 
 public class app {
     public static JFrame mainWindow;
@@ -18,8 +22,17 @@ public class app {
 
         // add login components
         background.setBackground();
+
         // add homepage components
         home.setHome();
+
+        // check for app directory and if not make one
+        fileOperations.checkAppDirectory();
+
+        // add recent file data
+        recentDataList.populateRecentFileData();
+
+//        new filePanel();
 
 
         mainWindow.setVisible(true);
